@@ -1,0 +1,114 @@
+.about {
+  padding: 130px 80px;
+  background: linear-gradient(180deg, #fffaf3, #ffffff);
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.about.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Heading */
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+  color: #8b5a2b;
+  letter-spacing: 1px;
+}
+
+/* Cards wrapper */
+.about-points {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.point {
+  background: white;
+  padding: 45px 35px;
+  border-radius: 22px;
+  max-width: 300px;
+
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.8s ease;
+
+  border-top: 4px solid #c98a2c;
+}
+
+/* Animation stagger */
+.about.show .point:nth-child(1){transition-delay:.2s}
+.about.show .point:nth-child(2){transition-delay:.4s}
+.about.show .point:nth-child(3){transition-delay:.6s}
+
+.about.show .point {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 25px;
+
+  background: rgba(201, 138, 44, 0.15);
+  color: #c98a2c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  border-radius: 50%;
+}
+
+/* Card text */
+.point h4 {
+  font-size: 1.3rem;
+  color: #2a1a0a;
+  margin-bottom: 15px;
+}
+
+.point p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Hover lift */
+.point:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 90px 30px;
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+
+  .about-points {
+    gap: 25px;
+  }
+}
