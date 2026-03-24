@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./style/Navbar.css";
+import logo from "../assets/logo.png"
 
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
         className="nav-logo"
         onClick={() => scrollToSection("home")}
       >
-        Mandya Jaggery
+        <img src={logo} alt="logo" />
       </div>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>

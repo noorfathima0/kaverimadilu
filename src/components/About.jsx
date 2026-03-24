@@ -19,7 +19,7 @@ export default function About() {
     <section id="about" ref={sectionRef} className={`about ${visible ? "show" : ""}`}>
       <div className="about-container">
 
-        <h2>Why Choose Mandya Jaggery?</h2>
+        <h2>Why Choose Kaveri Madilu?</h2>
 
         <div className="about-points">
 

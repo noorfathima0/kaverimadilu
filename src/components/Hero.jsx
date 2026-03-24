@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="overlay"></div>
 
       <div className="hero-content">
-        <h1>Mandya Jaggery</h1>
+        <h1>Kaveri Madilu</h1>
         <p>Pure • Natural • Traditionally Made</p>
 
         <div className="hero-buttons">
