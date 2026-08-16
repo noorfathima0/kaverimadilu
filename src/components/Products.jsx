@@ -1,7 +1,7 @@
 import "./style/Products.css";
-import blocks from "../assets/blocks.jpg";
-import cubes from "../assets/cubes.jpg";
-import powder from "../assets/powder.jpg";
+import blocks from "../assets/blocks.png";
+import cubes from "../assets/cubes.png";
+import powder from "../assets/powder.png";
 
 const products = [
   {
